@@ -112,7 +112,7 @@ export default function Home() {
       >
         <div className="absolute top-0 left-0 w-screen h-screen z-10">
           <Image
-            src="/homeBg.png"
+            src="/homeBg3.png"
             alt="Fullscreen Background"
             fill
             className="object-fill"
@@ -156,13 +156,15 @@ export default function Home() {
       >
         <div className="absolute top-0 left-0 w-screen h-screen z-10">
           <Image
-            src="/homeBg.png"
+            src="/homeBg3.png"
             alt="Fullscreen Background"
             fill
             className="object-fill"
             priority
           />
+          
         </div>
+          
         <div className="relative z-10 w-[90%] max-w-6xl aspect-[4/3] flex items-center justify-center max-h-[85vh]">
           <Image
             src="/technoVit-CRT.png"
@@ -179,7 +181,7 @@ export default function Home() {
           />
           <div className="absolute inset-0 flex flex-col items-center justify-between p-4 md:p-8">
             <div className="flex justify-between items-center w-full -mt-3 px-2 sm:px-4">
-              <div className="relative w-[25%] sm:w-[20%] md:w-[15%]">
+              <div className="relative w-[25%] sm:w-[20%] md:w-[15%] scale-150">
                 <Image
                   src="/vitLogoWhite.png"
                   alt="VIT Logo"
@@ -188,7 +190,7 @@ export default function Home() {
                   height={60}
                 />
               </div>
-              <div className="relative w-[40%] sm:w-[30%] md:w-[25%]">
+              <div className="relative w-[40%] sm:w-[30%] md:w-[25%] scale-150">
                 <Image
                   src="/technoVit.svg"
                   alt="TechnoVIT Logo"
