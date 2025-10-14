@@ -29,12 +29,12 @@ const Events = () => {
           />
         </div>
 
-        <div className="relative z-10 w-full min-h-screen flex items-center justify-around px-6 md:px-16 lg:px-24 ttFont">
-          <div className="flex flex-col space-y-3 text-left">
-            <h1 className="text-white text-6xl md:text-9xl lg:text-[110px] leading-none tracking-tight">
+        <div className="relative z-10 w-full min-h-screen flex flex-col lg:flex-row items-center justify-center lg:justify-around px-4 sm:px-6 md:px-12 lg:px-24 py-8 md:py-0 gap-8 lg:gap-0 ttFont">
+          <div className="flex flex-col space-y-2 sm:space-y-3 text-center lg:text-left">
+            <h1 className="text-white text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[110px] leading-none tracking-tight">
               Events
             </h1>
-            <p className="text-white text-xl md:text-2xl font-light">
+            <p className="text-white text-lg sm:text-xl md:text-2xl font-light">
               @ technoVIT&apos;25
             </p>
           </div>

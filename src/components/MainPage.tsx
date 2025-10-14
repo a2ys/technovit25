@@ -5,6 +5,7 @@ import { About } from "./About";
 import { Navigation } from "./Navigation";
 import { Footer } from "./Footer";
 import Events from "./Events";
+import { MerchPage } from "./MerchPage";
 
 const MainPage = () => {
   const [currentPage, setCurrentPage] = useState("home");
@@ -21,6 +22,8 @@ const MainPage = () => {
         return <Events />;
       case "team":
         return <Team />;
+      case "merch":
+        return <MerchPage />;
       case "about":
         return <About />;
     }
