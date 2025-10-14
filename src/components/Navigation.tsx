@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -22,7 +23,6 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
     { name: "EVENTS", path: "events" },
     { name: "TEAM", path: "team" },
     { name: "MERCH", path: "merch" },
-    // { name: "SPONSORS", path: "sponsors" },
   ];
 
   const handleNavClick = (path: string) => {
@@ -32,11 +32,12 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
 
   return (
     <nav
-      className={`fixed left-0 right-0 top-0 z-50 border-b-[1px] border-[#ffffff] bg-[#000000] backdrop-blur-md text-xl  ${bayon.className}`}
+      className={`fixed left-0 right-0 top-0 z-50 border-b-[1px] border-[#ffffff] bg-[#000000] backdrop-blur-md text-lg sm:text-xl ${bayon.className}`}
     >
-      <div className="mx-auto hidden h-16 max-w-[95vw] items-center md:flex">
+      {/* Desktop Navbar */}
+      <div className="mx-auto hidden h-16 max-w-[95vw] items-center justify-between px-4 md:flex">
         {/* Left - Navigation Links */}
-        <div className="flex flex-1 items-center gap-6 justify-start">
+        <div className="flex flex-1 items-center gap-4 lg:gap-6 justify-start">
           {navItems.map((item) => (
             <button
               key={item.path}
@@ -53,23 +54,23 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
 
         {/* Center - Logos */}
         <div
-          className="flex flex-none items-center gap-3 justify-center cursor-pointer"
+          className="flex flex-none items-center gap-2 sm:gap-3 justify-center cursor-pointer"
           onClick={() => handleNavClick("home")}
         >
           <img
             src="/technovit1.svg"
             alt="TechnoVIT Logo"
-            className="h-10 w-auto object-contain"
+            className="h-8 sm:h-10 w-auto object-contain"
           />
           <img
             src="/dot.png"
             alt="Separator Dot"
-            className="h-2 w-auto object-contain"
+            className="h-2 sm:h-3 w-auto object-contain"
           />
           <img
             src="/vitlogo.png"
             alt="VIT Logo"
-            className="h-10 w-auto object-contain"
+            className="h-8 sm:h-10 w-auto object-contain"
           />
         </div>
 
@@ -77,7 +78,7 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
         <div className="flex flex-1 items-center justify-end">
           <button
             onClick={() => handleNavClick("get-started")}
-            className="bg-[#70E081] px-4 py-2 uppercase text-black hover:bg-[#70E081]/90 transition-colors"
+            className="bg-[#70E081] px-3 sm:px-4 py-2 uppercase text-black hover:bg-[#70E081]/90 transition-colors text-sm sm:text-base"
           >
             Get Started
           </button>
@@ -94,17 +95,17 @@ export const Navigation = ({ currentPage, onNavigate }: NavigationProps) => {
           <img
             src="/technovit1.svg"
             alt="TechnoVIT Logo"
-            className="h-8 w-auto object-contain"
+            className="h-7 sm:h-8 w-auto object-contain"
           />
           <img
             src="/dot.png"
             alt="Separator Dot"
-            className="h-1.5 w-auto object-contain"
+            className="h-1.5 sm:h-2 w-auto object-contain"
           />
           <img
-            src="/vitlogo.svg"
+            src="/vitlogo.png"
             alt="VIT Logo"
-            className="h-8 w-auto object-contain"
+            className="h-7 sm:h-8 w-auto object-contain"
           />
         </div>
 
