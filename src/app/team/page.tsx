@@ -71,6 +71,7 @@ const teamData: TeamData = {
     {
       name: "Dr. Ganesh Narayanan",
       role: "Convenor",
+      image: "./ganesh_narayanan.png",
       email: "convenor.technoVIT@vit.ac.in",
     },
   ],
@@ -78,11 +79,13 @@ const teamData: TeamData = {
     {
       name: "Dr. Jayasudha M",
       role: "Co-Convenor",
+      image: "./jayasudha.png",
       email: "coconvenor.technoVIT@vit.ac.in",
     },
     {
       name: "Dr. Joseph Daniel",
       role: "Co-Convenor",
+      image: "./joseph_daniel.png",
       email: "coconvenor.technoVIT@vit.ac.in",
     },
   ],

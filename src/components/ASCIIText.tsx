@@ -474,7 +474,6 @@ class CanvAscii {
 
   updateOptions(newOptions: Partial<CanvAsciiOptions>) {
     let meshNeedsUpdate = false;
-    const textCanvasStyleNeedsUpdate = false;
 
     if (
       newOptions.text !== undefined &&

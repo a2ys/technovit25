@@ -4,7 +4,7 @@ import FaultyTerminal from "@/components/FaultyTerminal";
 import ImageCarousel from "@/components/ImageCarousel";
 import EventsPage from "@/components/EventsPage";
 import { useEffect, useState, useMemo } from "react";
-import { Asset, EventApiResponse, EventItem } from "@/interfaces/contentful";
+import { Asset, EventItem } from "@/interfaces/contentful";
 import { getAssetUrl } from "../utils/assetUrl";
 import { getCachedEventsData } from "../utils/apiCache";
 
