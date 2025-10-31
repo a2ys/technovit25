@@ -21,7 +21,7 @@ import { useState, useEffect } from "react";
 import { toast } from "sonner";
 import { useChat } from "@ai-sdk/react";
 import { Button } from "./ui/button";
-import Image from "next/image";
+import CachedImage from "./CachedImage";
 
 const suggestions = [
   "When is TechnoVIT 2025?",
@@ -103,8 +103,8 @@ const MiniChatbot = ({ onClose }: MiniChatbotProps) => {
       {/* Header */}
       <div className="flex items-center justify-between p-3 border-b">
         <div className="flex-1 flex items-center gap-3">
-          <Image
-            src="/chatbot-logo.png"
+          <CachedImage
+            src="https://cdn.a2ys.dev/images/chatbot-logo.png"
             alt="TechnoVIT"
             width={32}
             height={32}

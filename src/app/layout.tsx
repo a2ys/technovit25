@@ -11,6 +11,8 @@ import { Footer } from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import MiniChatbot from "@/components/MiniChatbot";
 import { Button } from "@/components/ui/button";
+import CachedImage from "@/components/CachedImage";
+import { WelcomeModal } from "@/components/WelcomeModal";
 
 const beVietnam = Be_Vietnam_Pro({
   variable: "--font-be-vietnam-pro",
@@ -81,15 +83,18 @@ export default function RootLayout({
             }`}
             size="icon"
           >
-            <Image
-              src="/chatbot-logo.png"
-              alt="Chatbot"
-              width={48}
-              height={48}
-              className="object-cover w-full h-full"
+            <CachedImage
+              src="https://cdn.a2ys.dev/images/chatbot-logo.png"
+              alt="TechnoVIT"
+              width={32}
+              height={32}
+              className="rounded-full"
             />
           </Button>
         )}
+
+        <WelcomeModal />
+
         <Analytics />
       </body>
     </html>

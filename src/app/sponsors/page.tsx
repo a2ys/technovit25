@@ -21,11 +21,28 @@ const sponsorData: SponsorCategory[] = [
     ],
   },
   {
-    title: "Partners",
+    title: "FM Partner",
     sponsors: [
       {
         name: "Hello FM",
         logoUrl: "https://cdn.a2ys.dev/images/hellofm.jpg",
+      },
+    ],
+  },
+  {
+    title: "Other Sponsors",
+    sponsors: [
+      {
+        name: "Elcon",
+        logoUrl: "https://cdn.a2ys.dev/images/elcon.jpg",
+      },
+      {
+        name: "MGM Healthcare",
+        logoUrl: "https://cdn.a2ys.dev/images/mgm.jpg",
+      },
+      {
+        name: "Indian Bank",
+        logoUrl: "https://cdn.a2ys.dev/images/ib.jpg",
       },
     ],
   },
