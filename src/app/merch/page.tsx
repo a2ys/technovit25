@@ -183,13 +183,11 @@ const MerchPage: React.FC = () => {
       </div>
 
       <a
-        href="https://chennaievents.vit.ac.in/technovit/merch"
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-4 rounded-full px-16 py-4 text-lg font-bold text-gray-900 cursor-pointer"
-        style={{ backgroundColor: accentColor }}
+        className="mt-4 rounded-full px-16 py-4 text-lg font-bold text-gray-900 bg-gray-500 cursor-not-allowed"
       >
-        Buy Now
+        Sold Out
       </a>
     </div>
   );

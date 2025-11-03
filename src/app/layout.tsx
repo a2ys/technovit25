@@ -93,8 +93,6 @@ export default function RootLayout({
           </Button>
         )}
 
-        <WelcomeModal />
-
         <Analytics />
       </body>
     </html>
