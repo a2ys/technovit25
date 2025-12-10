@@ -29,10 +29,10 @@ We’ll be developing the **Technovit’25 website** collaboratively using **Nex
 
 ## Working on Issues
 
-* All tasks will be listed as **GitHub Issues** under the main repository.
-* Pick an issue assigned to you (or comment to get assigned).
-* **Do not** work on unassigned issues to avoid duplication.
-* Limit each pull request to changes in **no more than 2–3 files** to keep reviews quick and clean.
+- All tasks will be listed as **GitHub Issues** under the main repository.
+- Pick an issue assigned to you (or comment to get assigned).
+- **Do not** work on unassigned issues to avoid duplication.
+- Limit each pull request to changes in **no more than 2–3 files** to keep reviews quick and clean.
 
 ## Workflow
 
@@ -50,8 +50,8 @@ We’ll be developing the **Technovit’25 website** collaboratively using **Nex
 
 2. **Make Changes**
 
-   * Work only on files relevant to your issue.
-   * Ensure code is formatted and functional locally before committing.
+   - Work only on files relevant to your issue.
+   - Ensure code is formatted and functional locally before committing.
 
 3. **Commit Changes**
 
@@ -75,15 +75,13 @@ We’ll be developing the **Technovit’25 website** collaboratively using **Nex
 
 6. **Open a Pull Request**
 
-   * Base branch: `development`
-   * Compare: your feature branch
-   * Link your PR to the corresponding **Issue Number**
+   - Base branch: `development`
+   - Compare: your feature branch
+   - Link your PR to the corresponding **Issue Number**
 
 ## Good Practices
 
-* Always **pull from upstream/development** before starting new work.
-* Keep your PRs **small and focused**.
-* Write **clear commit messages**.
-* If you face merge conflicts, **resolve them locally** before pushing.
-
-deploy please
+- Always **pull from upstream/development** before starting new work.
+- Keep your PRs **small and focused**.
+- Write **clear commit messages**.
+- If you face merge conflicts, **resolve them locally** before pushing.

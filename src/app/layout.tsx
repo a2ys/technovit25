@@ -1,18 +1,6 @@
-"use client";
-
 import { Be_Vietnam_Pro } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
-import { useState, useEffect } from "react";
-import Image from "next/image";
-
-import { Navigation } from "@/components/Navigation";
-import { Footer } from "@/components/Footer";
-import ScrollToTop from "@/components/ScrollToTop";
-import MiniChatbot from "@/components/MiniChatbot";
-import { Button } from "@/components/ui/button";
-import CachedImage from "@/components/CachedImage";
-import { WelcomeModal } from "@/components/WelcomeModal";
 
 const beVietnam = Be_Vietnam_Pro({
   variable: "--font-be-vietnam-pro",
@@ -20,79 +8,22 @@ const beVietnam = Be_Vietnam_Pro({
   weight: ["400", "500", "600", "700", "800", "900"],
 });
 
+export const metadata = {
+  title: "technoVIT'25 | See you in 2026",
+  description: "technoVIT'25 has concluded. Thank you for participating.",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [isChatbotOpen, setIsChatbotOpen] = useState(false);
-  const [isScrollTopVisible, setIsScrollTopVisible] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 300) {
-        setIsScrollTopVisible(true);
-      } else {
-        setIsScrollTopVisible(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <html lang="en">
-      <head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>
-          technovit&apos;25 | VIT Chennai&apos;s Annual Technical Fest
-        </title>
-        <meta
-          name="description"
-          content="technovit'25 - VIT Chennai's Annual Technical Fest. Join us for an exhilarating experience of innovation, technology, and creativity. Explore workshops, competitions, and guest lectures by industry experts. Unleash your potential and be part of the future!"
-        />
-        <meta
-          property="og:title"
-          content="technovit'25 | VIT Chennai's Annual Technical Fest"
-        />
-        <meta
-          property="og:description"
-          content="technovit'25 - VIT Chennai's Annual Technical Fest. Join us for an exhilarating experience of innovation, technology, and creativity."
-        />
-      </head>
       <body
-        className={`${beVietnam.className} antialiased bg-black relative min-h-[100svh]`}
+        className={`${beVietnam.className} antialiased bg-black text-white min-h-screen flex flex-col`}
       >
-        <div className="flex flex-col min-h-screen w-full">
-          <Navigation />
-          <main className="flex-1">
-            {children}
-            <ScrollToTop />
-          </main>
-          <Footer />
-        </div>
-        {isChatbotOpen ? (
-          <MiniChatbot onClose={() => setIsChatbotOpen(false)} />
-        ) : (
-          <Button
-            onClick={() => setIsChatbotOpen(true)}
-            className={`fixed right-8 z-50 h-12 w-12 rounded-full shadow-lg bg-primary hover:bg-primary/90 p-0 overflow-hidden transition-all duration-300 hover:scale-110 ${
-              isScrollTopVisible ? "bottom-24" : "bottom-8"
-            }`}
-            size="icon"
-          >
-            <CachedImage
-              src="https://cdn.a2ys.dev/images/chatbot-logo.png"
-              alt="TechnoVIT"
-              width={32}
-              height={32}
-              className="rounded-full"
-            />
-          </Button>
-        )}
-
+        <main className="flex-1 flex flex-col h-full w-full">{children}</main>
         <Analytics />
       </body>
     </html>
